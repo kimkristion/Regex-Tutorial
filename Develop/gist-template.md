@@ -1,6 +1,7 @@
-# Title (replace with your title)
+# Regular Expressions: Your Guide to Pattern Matching and Text Parsing
 
-Introductory paragraph (replace this with your text)
+Regular Expressions, commonly known as regex, is a set of special characters that are used in describing a search pattern. For example, using the character set of /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ this is used to verify whether or not a user is entering a valid email, as it's pattern is set to include a certain amount string before the use of the @ symbol, then followed by a domain name. Moreover, that sequence is defined by the 
+
 
 ## Summary
 
@@ -23,6 +24,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+An anchor within a regular expression is used to define a required position that a string must occupy during pattern recognition. There are two primary types of anchors: the caret anchor ('^') and the dollar sign anchor ('$'). The caret anchor is commonly placed at the beginning of a sequence to specify that the string must be positioned at the beginning of the expression. For example, consider the initial sequence in an email pattern, ^([a-z0-9_.-]+), where it asserts the position of lowercase letters, digits, underscores, dots, and hyphens at the beginning of the email address. This ensures strict positioning of the string to match the format of an email. Secondly, the dollar sign anchor, in a regular expression, serves to assert the adherence of input to be positioned at the very end of the sequence. For instance, consider the pattern ([\da-z\.-]+)\.([a-z\.]{2,6})$, which is used for capturing the format of an email's domain name. In this example, the dollar sign specifies that the pattern of characters preceding it must occur at the very end of the input.
 
 ### Quantifiers
 
